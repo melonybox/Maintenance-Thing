@@ -4,8 +4,8 @@ class CreateSectionParts < ActiveRecord::Migration[5.2]
       t.string :name
       t.string :description
       t.string :interval
-      t.string :estimated_cost
-      t.string :actual_cost
+      t.integer :estimated_cost
+      t.integer :actual_cost
 
       t.timestamps
     end
