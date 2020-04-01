@@ -1,2 +1,0 @@
-class SectionTagsController < ApplicationController
-end
