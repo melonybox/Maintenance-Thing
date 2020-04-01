@@ -1,0 +1,2 @@
+class SectionTagsController < ApplicationController
+end

@@ -1,0 +1,2 @@
+class SectionOverviewsController < ApplicationController
+end
