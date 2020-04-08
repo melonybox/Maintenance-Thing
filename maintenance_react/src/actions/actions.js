@@ -1,3 +1,35 @@
+export const getUserFetch = () => {
+  return dispatch => {
+    const token = localStorage.getItem("token")
+    if (token) {
+      return fetch("http://localhost:3000/api/v1/auto_login", {
+        method: "GET",
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json',
+          "Authorization": token
+        }
+      })
+        .then(resp => resp.json())
+        .then(data => {
+          if (data.errors) {
+            // An error will occur if the token is invalid.
+            // If this happens, you may want to remove the invalid token.
+            localStorage.removeItem("token")
+					  alert(data.errors)
+          } else {
+            if (data.current_chapter === null) {
+              data.current_chapter = 0
+              dispatch(loginUser(data))
+            } else {
+              dispatch(loginUser(data))
+            }
+          }
+        })
+    }
+  }
+}
+
 export const userLoginFetch = data => {
   //data contains email and password
   return dispatch => {
