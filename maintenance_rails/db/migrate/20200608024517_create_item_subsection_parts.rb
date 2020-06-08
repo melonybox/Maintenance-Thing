@@ -1,6 +1,6 @@
-class CreateSectionParts < ActiveRecord::Migration[5.2]
+class CreateItemSubsectionParts < ActiveRecord::Migration[5.2]
   def change
-    create_table :section_parts do |t|
+    create_table :item_subsection_parts do |t|
       t.string :name
       t.string :description
       t.string :interval

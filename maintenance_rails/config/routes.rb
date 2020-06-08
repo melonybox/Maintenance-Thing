@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
-  resources :section_tags
-  resources :section_parts
-  resources :section_items
-  resources :section_overviews
+  resources :overviews
+  resources :items
+  resources :item_tags
+  resources :item_subsection_parts
+  resources :item_subsections
   namespace :api do
     namespace :v1 do
       resources :users

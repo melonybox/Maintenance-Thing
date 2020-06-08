@@ -1,2 +1,0 @@
-class SectionPart < ApplicationRecord
-end

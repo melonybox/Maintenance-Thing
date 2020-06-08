@@ -1,2 +1,0 @@
-class SectionTag < ApplicationRecord
-end
