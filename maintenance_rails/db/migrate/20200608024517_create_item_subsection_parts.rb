@@ -6,6 +6,7 @@ class CreateItemSubsectionParts < ActiveRecord::Migration[5.2]
       t.string :interval
       t.integer :estimated_cost
       t.integer :actual_cost
+      t.belongs_to :item_subsection, foreign_key: true
 
       t.timestamps
     end
