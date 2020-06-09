@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
   resources :overviews
   resources :items
-  resources :item_tags
   resources :item_subsection_parts
   resources :item_subsections
   namespace :api do
