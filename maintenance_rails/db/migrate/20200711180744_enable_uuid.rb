@@ -1,4 +1,4 @@
-class EnableUuid < ActiveRecord::Migration[5.2]
+class EnableUuid < ActiveRecord::Migration[6.0]
   def change
     enable_extension 'pgcrypto'
   end
