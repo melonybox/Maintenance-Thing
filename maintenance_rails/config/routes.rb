@@ -4,6 +4,7 @@ Rails.application.routes.draw do
     namespace :v1 do
       resources :users
       resources :projects
+      resources :items
 
       get "/auto_login", to: "auth#auto_login"
       post "/login", to: "auth#login"
