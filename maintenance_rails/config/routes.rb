@@ -5,6 +5,7 @@ Rails.application.routes.draw do
       resources :users
       resources :projects
       resources :items
+      resources :alerts
 
       get "/auto_login", to: "auth#auto_login"
       post "/login", to: "auth#login"
