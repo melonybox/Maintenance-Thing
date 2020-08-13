@@ -7,6 +7,6 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-# Project.create(name: "Sam")
+User.create(username: "Sam", email: "test@test", password_digest: "test")
 # Project.create(name: "Sam Fam", manager_id: 284b5a7f-b69d-4772-8ea8-2ee9c7bcfa61)
 # Project.create(name: "Sam Gam", manager_id: sam.id)
