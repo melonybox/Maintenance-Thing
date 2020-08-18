@@ -3,5 +3,5 @@ class Alert < ApplicationRecord
 
   has_many :items
   has_many :users, through: :items
-  has_one :description, as: :notes
+  has_one :description, as: :note
 end

@@ -5,7 +5,7 @@ class Item < ApplicationRecord
   belongs_to :main_item, class_name: "Item", optional: true
   belongs_to :user
   belongs_to :alert, optional: true
-  has_one :description, as: :notes
+  has_one :description, as: :note
 end
 
 # d9b881d0-a381-4710-b2f7-a326888953f9

@@ -25,11 +25,11 @@ ActiveRecord::Schema.define(version: 2020_08_13_032317) do
 
   create_table "descriptions", id: :uuid, default: -> { "gen_random_uuid()" }, force: :cascade do |t|
     t.string "description"
-    t.string "notes_type"
-    t.uuid "notes_id"
+    t.string "note_type"
+    t.uuid "note_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["notes_type", "notes_id"], name: "index_descriptions_on_notes_type_and_notes_id"
+    t.index ["note_type", "note_id"], name: "index_descriptions_on_note_type_and_note_id"
   end
 
   create_table "items", id: :uuid, default: -> { "gen_random_uuid()" }, force: :cascade do |t|
