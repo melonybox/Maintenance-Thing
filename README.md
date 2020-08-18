@@ -6,6 +6,6 @@
 <!-- Description table add, polymorphic to alert and items -->
 <!-- Alerts table commands tested -->
 <!-- Polymorphic table test  -->
-Polymorphic remaining of belongs_to and related.
+<!-- Polymorphic remaining of belongs_to and related. -->
 Money Handling setup?
 Start on react frontends
