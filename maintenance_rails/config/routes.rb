@@ -9,6 +9,10 @@ Rails.application.routes.draw do
 
       get "/auto_login", to: "auth#auto_login"
       post "/login", to: "auth#login"
+
+      # Routes for Google authentication
+      get 'auth/:provider/callback', to: 'sessions#googleAuth'
+      get 'auth/failure', to: redirect('/')
     end
   end
 end
