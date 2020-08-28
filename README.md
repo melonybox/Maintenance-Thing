@@ -8,4 +8,5 @@
 <!-- Polymorphic table test  -->
 <!-- Polymorphic remaining of belongs_to and related. -->
 Money Handling setup?
+Google auth setup
 Start on react frontends
