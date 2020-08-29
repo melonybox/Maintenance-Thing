@@ -22,6 +22,9 @@ maintenance_rails/.byebug_history
 # Ignore master key for decrypting credentials and more.
 maintenance_rails/config/master.key
 
+# #Ignore ENV
+maintenance_rails/.env
+
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
