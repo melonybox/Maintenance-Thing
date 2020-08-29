@@ -5,6 +5,7 @@ class CreateUsers < ActiveRecord::Migration[6.0]
       t.string :email
       t.string :google_token
       t.string :google_refresh_token
+      t.monetize :cash_amount
 
       t.timestamps
     end
